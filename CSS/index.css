@@ -1,0 +1,151 @@
+/*通用*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+/*To do list*/
+.wrapper{
+    padding-left: 35px;
+    padding-right: 35px;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 2px solid rgb(188, 211, 10);
+}
+.input_div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.input_div>input{
+    font-size: 22px;
+    padding-left: 20px;
+    border-radius: 5px;
+    border: 3px solid black;
+    width: 75%;
+    height: 75px;
+}
+.input_div>input::placeholder{
+    text-align: inherit;
+    font-size: 22px;
+}
+.add{
+    height: 70px;
+}
+.add:hover{
+    cursor: pointer;
+}
+.add img{
+    height: 95%;
+}
+.needtodo .content ul{
+    transition: 0.3s all;
+}
+.needtodo .content li{
+    transition: 0.3s all;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 5px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 6px;
+    min-height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.needtodo .content li .char{
+    min-width: 60%;
+    max-width: 90%;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.needtodo .content li .char p{
+    width: 100%;
+}
+.needtodo .content li .none{
+    transition: all 0.3;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid gray;
+}
+.needtodo .content li .none img{
+    width: 100%;
+    height: 100%;
+}
+.needtodo .content li img{
+    max-width: 45px;
+    height: 100%;
+}
+.needtodo .content li .delete{
+    height: 87%;
+}
+.needtodo .content li .delete,.needtodo .content li .none:hover{
+    cursor: pointer;
+}
+.done .content li{
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 5px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 6px;
+    min-height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.done .content li .char{
+    min-width: 75%;
+    max-width: 90%;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.done .content li .char p{
+    color: gray;
+    text-decoration:line-through;
+    width: 100%;
+}
+.done .content li .none{
+    border: 2px solid gray;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+}
+.done .content li .none img{
+    width: 100%;
+    height: 100%;
+}
+.done .content li img{
+    max-width: 45px;
+    height: 100%;
+}
+.done .content li .delete{
+    height: 87%;
+}
+.done .content li .delete,.needtodo .content li .none:hover{
+    cursor: pointer;
+}
+.done .content li .none:hover{
+    cursor: pointer;
+}
